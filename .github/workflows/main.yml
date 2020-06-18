@@ -32,12 +32,6 @@ jobs:
       with:
         #Yarn command
         cmd: install # npm install/yarn install
-
-    # Install Bootstrap
-    - name: Installing Bootstrap
-      uses: bootstrap@4.5.0
-      with:
-        bootstrap-version: 4 
   
     # Build React App with Yarn
     - name: Creating Build
