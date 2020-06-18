@@ -35,8 +35,10 @@ jobs:
 
     # Install Bootstrap
     - name: Installing Bootstrap
-    - run: yarn add bootstrap
-
+      uses: yarn add bootstrap
+      with:
+        bootstrap-version: 4 
+  
     # Build React App with Yarn
     - name: Creating Build
       run: yarn build
